@@ -1,0 +1,10 @@
+services:
+  db:
+    image: mariadb:11
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: chronormu
+      MYSQL_USER: chronormu
+      MYSQL_PASSWORD: chronormu
+    ports:
+      - "3306:3306"
